@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+  <title>Snake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Start Screen -->
+  <div id="screen-start" class="screen active">
+    <img src="D.png" alt="Logo" id="logo-start">
+    <button id="btn-start">Inizia</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="screen-game" class="screen">
+    <div id="score-display">PUNTEGGIO: <span id="score-value">0</span></div>
+    <canvas id="game-canvas"></canvas>
+    <div id="dpad">
+      <button class="dpad-btn" id="btn-up">▲</button>
+      <button class="dpad-btn" id="btn-left">◀</button>
+      <div class="dpad-center"></div>
+      <button class="dpad-btn" id="btn-right">▶</button>
+      <button class="dpad-btn" id="btn-down">▼</button>
+    </div>
+  </div>
+
+  <!-- Game Over Screen -->
+  <div id="screen-gameover" class="screen">
+    <p id="gameover-label">GAME OVER</p>
+    <p id="gameover-score">0</p>
+    <p id="gameover-reward"></p>
+    <button id="btn-replay">Rigioca</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
