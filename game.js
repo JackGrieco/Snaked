@@ -8,9 +8,9 @@ const REWARDS = [
 ]
 
 const GRID_SIZE = 20
-const INITIAL_SPEED = 200  // ms per tick
-const SPEED_STEP = 10      // ms tolti ogni 5 punti
-const MIN_SPEED = 80       // ms minimo
+const INITIAL_SPEED = 80   // ms per tick
+const SPEED_STEP = 20      // ms tolti ogni 5 punti
+const MIN_SPEED = 30       // ms minimo
 
 // ============================================================
 // LOGICA PURA — nessuna dipendenza browser
@@ -216,10 +216,10 @@ function stopGame() {
 // ============================================================
 
 const DIRECTIONS = {
-  up:    { x: 0, y: -1 },
-  down:  { x: 0, y:  1 },
-  left:  { x: -1, y: 0 },
-  right: { x:  1, y: 0 },
+  up: { x: 0, y: -1 },
+  down: { x: 0, y: 1 },
+  left: { x: -1, y: 0 },
+  right: { x: 1, y: 0 },
 }
 
 function applyDirection(dir) {
